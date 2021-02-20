@@ -4,7 +4,7 @@
 from azureml.core import Workspace, Datastore, Dataset, Experiment
 from azureml.core import Run
 
-ws = Workspace.from_config()
+ws = Workspace.from_config('./config.json')
 az_store = Datastore.get(ws, 'from_sdk')
 az_ds = Dataset.get_by_name(ws, 'Loan Applications Using SDK')
 az_default_store = ws.get_default_datastore()

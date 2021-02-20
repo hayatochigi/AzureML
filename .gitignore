@@ -2,3 +2,4 @@ config.json
 /data
 my_subscription.txt
 access_key.txt
+__pycache__
